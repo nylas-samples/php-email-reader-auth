@@ -1,0 +1,8 @@
+{
+    "require": {
+        "leafs/leaf": "^3.5",
+        "leafs/blade": "^2.0",
+        "leafs/session": "^2.0",
+        "vlucas/phpdotenv": "^5.6"
+    }
+}
