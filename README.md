@@ -2,6 +2,8 @@
 
 This sample repo will show how to use Hosted Auth to log in a user and display his/hers latest 10 email messages.
 
+This repo uses the [LeafPHP](https://leafphp.dev/) PHP Framework.
+
 ## Setup
 
 ### System dependencies
