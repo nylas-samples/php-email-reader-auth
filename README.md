@@ -1,40 +1,49 @@
-# code-sample-description
-This sample repo will show you how to easily do X with Nylas.
+# PHP Email Reader
+
+This sample repo will show how to use Hosted Auth to log in a user and display his/hers latest 10 email messages.
 
 ## Setup
 
 ### System dependencies
-
-- Add System dependencies
+PHP version 8.3.4 or higher
 
 ### Gather environment variables
 
-You'll need the following values from the Nylas Dashboard:
+You'll need the following value on an .env file:
 
 ```text
-ACCESS_TOKEN = ""
-CLIENT_ID = ""
-CLIENT_SECRET = ""
+API_KEY_V3=<YOU_API_KEY_V3>
 ```
-
-Add the above values to a `.env` file.
 
 The `.env` file is added to `.gitignore`. Ensure to store these values securely.
 
 ### Install dependencies
 
-[replace with install steps]
 ```bash
-$ npm i
+$ composer require leafs/leaf
+$ composer require leafs/blade
+$ composer require vlucas/phpdotenv
+$ composer require leafs/session
+```
+
+## Hosted Authentication
+
+You need to add the following to your Callback URIs tab on the Hosted Authentication section of your Nylas Dashboard
+
+Details on how to do that can be found here [How to create a scheduler with Python and Taipy](https://www.nylas.com/blog/how-to-create-a-scheduler-with-python-and-taipy/)
+
+```
+http://localhost:8000
+http://localhost:8000/oauth/exchange
 ```
 
 ## Usage
 
-The recommended way to use this sample is ...
+To run the project, clone it and the run
 
-You can also clone the repository ...
-
-You'll find more detailed instructions ...
+```
+php -S localhost:8000
+```
 
 ## Get support
 
